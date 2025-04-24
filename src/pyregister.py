@@ -8,9 +8,9 @@ class RegisterBatchDLL:
         LibPath = None
 
         if platform.system() == 'Windows':
-                LibPath = r'C:\Users\tempe\Desktop\ASM_Proj\test\bin\pyregister.dll'
+                LibPath = r'./Pyregister/bin/pyregister.dll'
         else:
-            LibPath = r'C:\Users\tempe\Desktop\ASM_Proj\test\bin\libpyregister.so'
+            LibPath = r'./Pyregister/bin/libpyregister.so'
         
         if not os.path.exists(LibPath):
             raise FileNotFoundError(f"DLL not founded: \'{LibPath}\'")
