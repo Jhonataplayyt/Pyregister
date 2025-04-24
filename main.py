@@ -1,7 +1,7 @@
-from src.pyregister import *
+from .pyregister import RegisterBatch
 
 if __name__ == "__main__":
-    batch = RegisterBatchDLL()
+    batch = RegisterBatch()
 
     batch.write("EBX", 15)
     batch.read("EBX")
