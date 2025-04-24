@@ -3,7 +3,7 @@ import ctypes
 import sys
 import platform
 
-class RegisterBatchDLL:
+class RegisterBatch:
     def __init__(self):
         LibPath = None
 
